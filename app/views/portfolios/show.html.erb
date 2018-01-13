@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container <%= "portfolio-form".html_safe if logged_in?(:site_admin) %>">
   <div class="row">
     <div class="col-md-7">
       <%= image_tag @portfolio_item.main_image %>
