@@ -7,6 +7,8 @@ class Blog < ApplicationRecord
 
   belongs_to :topic, optional: true # Added 'optional: true' to bypass rails 5's change that makes all 'belongs_to's required for validations
 
+  has_many :comments, dependent: :destroy
+
   def self.special_blogs
     all
   end
