@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
 
   validates_presence_of :title, :body
 
-  belongs_to :topic, optional: true # Added 'optional: true' to bypass rails 5's change that makes all 'belongs_to's required for validations
+  belongs_to :topic #, optional: true # Added 'optional: true' to bypass rails 5's change that makes all 'belongs_to's required for validations
 
   has_many :comments, dependent: :destroy
 
