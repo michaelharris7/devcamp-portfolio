@@ -10,6 +10,7 @@
     <%= form.text_field :title, id: :blog_title, class: 'form-control line-spacer', placeholder: 'Title' %>
   </div>
 
+  <% blog.topic = Topic.first if blog.topic == nil %>
   <div class="form_group">
     <%= form.label :topic_id %>
     <%= form.collection_select(:topic_id, Topic.all, :id, :title,
