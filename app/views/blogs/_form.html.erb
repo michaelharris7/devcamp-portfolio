@@ -6,11 +6,25 @@
   <% end %>
 
   <div class="form_group">
+    <%= form.label :title %>
     <%= form.text_field :title, id: :blog_title, class: 'form-control line-spacer', placeholder: 'Title' %>
   </div>
 
   <div class="form_group">
-    <%= form.text_area :body, id: :blog_body, rows: 15, class: 'form-control', placeholder: 'Content' %>
+    <%= form.label :topic_id %>
+    <%= form.collection_select(:topic_id, Topic.all, :id, :title,
+                                {
+                                  selected: blog.topic.id,
+                                  include_blank: true
+                                },
+                                class: 'form-control line-spacer'
+                              )
+    %>
+  </div>
+
+  <div class="form_group">
+    <%= form.label :body, 'Content' %>
+    <%= form.text_area :body, id: :blog_body, rows: 15, class: 'form-control line-spacer', placeholder: 'Content' %>
   </div>
 
   <div class="form_group">
