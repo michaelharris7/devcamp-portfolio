@@ -1,8 +1,16 @@
-<div class="blog-masthead">
+<nav class="blog-masthead navbar navbar-expand-md navbar-dark blog-nav">
   <div class="container">
-    <nav class="nav">
-      <%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper 'nav-link' %>
-    </nav>
+    <%= link_to "Michael Harris", root_path, class: 'navbar-brand' %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto nav-pos">
+        <%= nav_helper 'nav-link', 'li' %>
+        <%= login_helper 'nav-link' %>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
