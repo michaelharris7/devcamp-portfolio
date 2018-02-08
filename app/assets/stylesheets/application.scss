@@ -222,3 +222,24 @@ body {
   padding: 30px;
   background: rgba(255,255,255,0.9);
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: #8B0000;
+}
+
+.profile-img {
+  border: 1px solid light-grey;
+}
+
+.contact-details {
+  padding-left: 40px;
+}
