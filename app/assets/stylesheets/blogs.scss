@@ -2,6 +2,15 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+  font-family: 'Lato';
+  src: font-url('Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  src: font-url('RobotoSlab-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -12,7 +21,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Lato', sans-serif;
   color: #555;
 }
 
@@ -28,7 +37,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   color: #333;
 }
@@ -66,6 +75,7 @@ h6,
 .nav-link.active {
   color: #fff;
 }
+/*
 .nav-link.active::after {
   position: absolute;
   bottom: 0;
@@ -79,6 +89,7 @@ h6,
   border-bottom: .3rem solid;
   border-left: .3rem solid transparent;
 }
+*/
 
 /*
  * Blog name and description
@@ -167,7 +178,7 @@ h6,
  */
 
 .line-spacer {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .social-links li {
@@ -187,4 +198,28 @@ h6,
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb {
+  font-size: 1.25em;
+}
+
+.blogcrumb a {
+  margin: 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 40px;
+}
+
+.nav-pos {
+  margin-left: 50px;
+}
+
+.nav-pos li {
+  white-space: nowrap;
+}
+
+.alert-info {
+  background-color: #d9edf7;
 }
