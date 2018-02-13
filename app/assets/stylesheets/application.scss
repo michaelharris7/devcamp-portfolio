@@ -138,6 +138,7 @@ h6, .h6 {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  z-index: -1;
 }
 
 
@@ -269,4 +270,8 @@ h6, .h6 {
 
 .skill {
   margin: 10px 0;
+}
+
+.mast-spacer {
+  height: 100px;
 }

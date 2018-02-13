@@ -23,9 +23,8 @@
           <%= video_tag(
               'HardDrivePhotojpeg.ogv',
               id: 'background',
-              autoplay: true,
-              loop: true,
               muted: true,
+              loop: true,
               poster: 'home_bg.png'
             )
             %>
@@ -41,5 +40,11 @@
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function() {
+        $("#background").get(0).play();
+        $("#background").get(0).muted = "muted";
+      });
+    </script>
   </body>
 </html>
