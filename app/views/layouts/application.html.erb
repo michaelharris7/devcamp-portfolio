@@ -16,29 +16,23 @@
   </head>
 
   <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
+    <div class="flex-container">
+      <%= video_tag(
+          'HardDrivePhotojpeg.ogv',
+          id: 'background',
+          muted: true,
+          loop: true,
+          poster: 'home_bg.png'
+        )
+        %>
 
-          <%= video_tag(
-              'HardDrivePhotojpeg.ogv',
-              id: 'background',
-              muted: true,
-              loop: true,
-              poster: 'home_bg.png'
-            )
-            %>
+      <%= render "shared/application_nav" %>
 
-          <%= render "shared/application_nav" %>
+      <%= alerts %>
 
-          <%= yield %>
+      <%= yield %>
 
-          <%= render "shared/application_footer" %>
-
-          <%= alerts %>
-
-        </div>
-      </div>
+      <%= render "shared/application_footer" %>
     </div>
     <script>
       $(document).ready(function() {

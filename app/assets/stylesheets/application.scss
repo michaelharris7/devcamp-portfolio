@@ -39,10 +39,13 @@ html,
 body {
   height: 100%;
   font-family: 'Lato', sans-serif;
+  margin: 0;
 }
+
 body {
   color: #fff;
   text-align: center;
+  background-color: #000000;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -55,22 +58,6 @@ h6, .h6 {
   font-family: 'Roboto Slab', serif;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
 
 /* Padding for spacing */
 .inner {
@@ -83,6 +70,7 @@ h6, .h6 {
  */
 .masthead {
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .masthead-brand {
@@ -92,14 +80,14 @@ h6, .h6 {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: #c0c0c0;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: #c0c0c0;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -107,8 +95,8 @@ h6, .h6 {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #6eceff;
+  border-bottom-color: #ffe040;
 }
 
 @media (min-width: 48em) {
@@ -134,53 +122,31 @@ h6, .h6 {
 
 
 /*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
-  z-index: -1;
-}
-
-
-/*
- * Affix and center
- */
-@media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 62em) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 65rem;
-  }
-}
-
-
-/*
  * Custom Styles
  */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.flex-header {
+  flex: 0 1 auto;
+  height: 100px;
+}
+
+.flex-content {
+  flex: 1 1 auto;
+  width: 65rem;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.flex-footer {
+  flex: 0 1 100px;
+  background: linear-gradient(rgba(40,75,92,0.9), rgba(26,48,60,1));
+}
 
 .card-block {
   color: black;
@@ -223,10 +189,11 @@ h6, .h6 {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('home_bg.png') no-repeat;
   background-size: cover;
+  opacity: 0.8;
 }
 
 .app-footer {
-  color: white;
+  color: #e0e0e0;
 }
 
 .tech-news {
@@ -235,7 +202,7 @@ h6, .h6 {
 }
 
 .tech-news a {
-  color: blue;
+  color: darkblue;
 }
 
 .tech-news > .card {
@@ -246,6 +213,7 @@ h6, .h6 {
 .app-card-container {
   color: black;
   text-align: left;
+  box-shadow: 5px 10px 18px rgba(0, 0, 0, .5);
 }
 
 .app-card-container > .card {
@@ -253,11 +221,23 @@ h6, .h6 {
 }
 
 .app-card-container a {
-  color: #8B0000;
+  color: darkblue;
+}
+
+.app-card-container h1,
+.app-card-container h2,
+.app-card-container h3,
+.app-card-container h4 {
+  color: #8b0000;
+}
+
+.map-shadow {
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, .25);
 }
 
 .profile-img {
   border: 1px solid light-grey;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, .25);
 }
 
 .contact-details {
@@ -272,6 +252,47 @@ h6, .h6 {
   margin: 10px 0;
 }
 
-.mast-spacer {
+.mast-spacer-one {
+  height: 50px;
+}
+
+.mast-spacer-two {
   height: 100px;
+}
+
+.mast-spacer-three {
+  height: 150px;
+}
+
+.nav-color {
+  color: #539bc0;
+}
+
+.masthead-brand a {
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  text-decoration: none;
+}
+
+.masthead-brand a:hover,
+.masthead-brand a:focus {
+  color: #6eceff;
+  border-bottom-color: #c0c0c0;
+}
+
+.masthead-cover {
+  background: linear-gradient(rgba(16,16,16,1), rgba(64,64,64,0.9));
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.cover-heading {
+  color: #fff5c0;
+}
+
+.btn {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .25);
 }
