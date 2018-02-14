@@ -23,8 +23,7 @@ a:hover {
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-secondary:visited {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
@@ -130,9 +129,9 @@ h6, .h6 {
   flex-direction: column;
   height: 100%;
 }
+
 .flex-header {
   flex: 0 1 auto;
-  height: 100px;
 }
 
 .flex-content {
@@ -140,7 +139,6 @@ h6, .h6 {
   width: 65rem;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .flex-footer {
@@ -168,7 +166,11 @@ h6, .h6 {
   float: none;
 }
 
-.line-spacer {
+.line-spacer-10 {
+  margin: 10px 0;
+}
+
+.line-spacer-20 {
   margin: 20px 0;
 }
 
@@ -224,11 +226,19 @@ h6, .h6 {
   color: darkblue;
 }
 
-.app-card-container h1,
-.app-card-container h2,
-.app-card-container h3,
-.app-card-container h4 {
+.card h1,
+.card h2,
+.card h3,
+.card h4 {
   color: #8b0000;
+}
+
+.end-extender-20 {
+  padding-bottom: 20px;
+}
+
+.end-extender-40 {
+  padding-bottom: 40px;
 }
 
 .map-shadow {
@@ -252,16 +262,20 @@ h6, .h6 {
   margin: 10px 0;
 }
 
-.mast-spacer-one {
+.mast-spacer-50 {
   height: 50px;
 }
 
-.mast-spacer-two {
+.mast-spacer-100 {
   height: 100px;
 }
 
-.mast-spacer-three {
+.mast-spacer-150 {
   height: 150px;
+}
+
+.mast-spacer-200 {
+  height: 200px;
 }
 
 .nav-color {
@@ -295,4 +309,24 @@ h6, .h6 {
 
 .btn {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .25);
+}
+
+.btn-secondary:hover {
+  background-color: #fff9d9;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active {
+  background-color: #fff9d9;
+  border-color: #ffe040;
+  color: #333;
+}
+
+.form-btn-right {
+  position:absolute;
+  right:20px;
+}
+
+.trans-text {
+  opacity: .5;
 }

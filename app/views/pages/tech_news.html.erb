@@ -1,18 +1,19 @@
-<main role="main" class="flex-content">
-  <div class="mast-spacer-three"></div>
+<div class="mast-spacer-150"></div>
 
-  <h1 class="cover-heading">Rails News</h1>
+<h1 class="cover-heading">Rails News</h1>
 
-  <div class="row">
-    <% @tweets.each do |tweet| %>
-      <div class="col-md-6">
-        <div class="tech-news">
-          <div class="card">
-            <%= twitter_parser tweet %>
-          </div>
+<hr>
+
+<div class="row">
+  <% @tweets.each do |tweet| %>
+    <div class="col-md-6">
+      <div class="tech-news">
+        <div class="card">
+          <%= twitter_parser tweet %>
         </div>
       </div>
-    <% end %>
-  </div>
-  <div class="mast-spacer-one"></div>
-</main>
+    </div>
+  <% end %>
+</div>
+
+<div class="mast-spacer-50"></div>

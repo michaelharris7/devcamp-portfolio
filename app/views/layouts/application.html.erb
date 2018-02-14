@@ -24,15 +24,21 @@
           loop: true,
           poster: 'home_bg.png'
         )
-        %>
-
-      <%= render "shared/application_nav" %>
+      %>
 
       <%= alerts %>
 
-      <%= yield %>
+      <header class="flex-header">
+        <%= render "shared/application_nav" %>
+      </header>
 
-      <%= render "shared/application_footer" %>
+      <main role="main" class="flex-content">
+        <%= yield %>
+      </main>
+
+      <footer class="flex-footer">
+        <%= render "shared/application_footer" %>
+      </footer>
     </div>
     <script>
       $(document).ready(function() {
