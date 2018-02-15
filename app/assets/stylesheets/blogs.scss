@@ -16,7 +16,7 @@
  */
 @media (min-width: 48em) {
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -213,7 +213,8 @@ h6,
 }
 
 .nav-pos {
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .nav-pos li {
@@ -222,4 +223,9 @@ h6,
 
 .alert-info {
   background-color: #d9edf7;
+}
+
+.collapse.show {
+  margin-left: 30px;
+  margin-top: 20px;
 }
