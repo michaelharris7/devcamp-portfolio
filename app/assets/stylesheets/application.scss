@@ -74,6 +74,11 @@ h6, .h6 {
 
 .masthead-brand {
   margin-bottom: 0;
+  float: left;
+}
+
+.nav-masthead {
+  float: right;
 }
 
 .nav-masthead .nav-link {
@@ -99,12 +104,20 @@ h6, .h6 {
   border-bottom-color: #ffe040;
 }
 
-@media (min-width: 48em) {
+@media (max-width: 850px) {
   .masthead-brand {
-    float: left;
+    margin-top: 0px;
+    float: none;
+    text-align: center;
   }
+
   .nav-masthead {
-    float: right;
+    float: none;
+    min-width: 600px;
+  }
+
+  .inner {
+    padding: 1rem 2rem;
   }
 }
 
