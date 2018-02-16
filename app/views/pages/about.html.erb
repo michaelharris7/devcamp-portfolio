@@ -1,6 +1,6 @@
 <div class="mast-spacer-150"></div>
 
-<div class="app-card-container">
+<div class="app-card-container screen-width-set">
   <div class="card">
     <h1>About Me</h1>
 
@@ -20,7 +20,7 @@
                   aria-valuenow="<%= skill.percent_utilized %>"
                   aria-valuemax="100"
                   style="width: <%= skill.percent_utilized %>%"
-                ></div>
+                ></div><em class="progress-indicator"><%= skill.percent_utilized %>%</em>
               </div>
             </div>
           <% end %>
@@ -83,7 +83,15 @@
           <div class="collapse" id="education">
             <h3>Education</h3>
             <div class="card card-block">
-              School 1
+              <div class="row">
+                <div class="col-md-4 py-4">
+                  <%= image_tag "business_logos/bottega.png", width: 143, alt: "Bottega" %>
+                </div>
+                <div class="col-md-8">
+                  <h5>Bottega School of Technology</h5>
+                  <p>Blah, blah, blah</p>
+                </div>
+              </div>
             </div>
 
             <div class="card card-block">
