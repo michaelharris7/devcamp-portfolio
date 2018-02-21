@@ -356,3 +356,10 @@ h6, .h6 {
   opacity: .5;
   margin-left: 5px;
 }
+
+.card p,
+.card h4,
+.card h5,
+.card h6 {
+  text-shadow: none;
+}

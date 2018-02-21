@@ -9,10 +9,12 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "300x350.png", width: 300, alt: "profile image", class: 'profile-img' %>
+
+        <h3 class="mt-4 mb-2">Full-Stack Developer</h3>
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
-              <h4><%= skill.title %></h4>
+              <h5><%= skill.title %></h5>
               <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped bg-warning"
@@ -58,7 +60,7 @@
 
         <p>
           <div class="collapse" id="jobHistory">
-            <h3>Job History</h3>
+            <h2>Job History</h2>
             <div class="card card-block">
               Job 1
             </div>
@@ -80,29 +82,34 @@
             </div>
           </div>
 
-          <div class="collapse" id="education">
-            <h3>Education</h3>
+          <div class="collapse mt-3" id="education">
+            <h2>Education</h2>
             <div class="card card-block">
               <div class="row">
-                <div class="col-md-4 py-4">
-                  <%= image_tag "business_logos/bottega.png", width: 143, alt: "Bottega" %>
+                <div class="col-md-3">
+                  <%= image_tag "schools/bottega.jpg", width: 125, alt: "Bottega" %>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                   <h5>Bottega School of Technology</h5>
-                  <p>Blah, blah, blah</p>
+                  <p>Currently enrolled in the full-stack developer bootcamp course where I am studying Ruby, Ruby on Rails, JavaScript, JQuery, HTML, CSS, and much more.</p>
                 </div>
               </div>
             </div>
 
             <div class="card card-block">
-              School 2
-            </div>
-
-            <div class="card card-block">
-              School 3
+              <div class="row">
+                <div class="col-md-3 py-3">
+                  <%= link_to image_tag("schools/w3cert.gif", width: 125, alt: "W3 Schools Certified"), "http://www.refsnesdata.no/certification/w3certified.asp?id=8124587", target: :_blank %>
+                </div>
+                <div class="col-md-9">
+                  <h5>W3 Schools</h5>
+                  <p>Received front-end Web Developer Certificates for courses completed in HTML, CSS, and JavaScript</p>
+                </div>
+              </div>
             </div>
           </div>
         </p>
+
       </div>
     </div>
   </div>
