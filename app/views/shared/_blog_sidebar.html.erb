@@ -1,7 +1,7 @@
 <aside class="col-sm-3 ml-sm-auto blog-sidebar">
   <div class="sidebar-module sidebar-module-inset line-spacer">
-    <h4>About</h4>
-    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <h4>About Me</h4>
+    <p>Software Development is my devotion. Creating new posibilities is my passion.</p>
   </div>
 
   <%= source_helper("alert alert-info line-spacer") %>
@@ -16,10 +16,9 @@
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">
-      <li><a href="#"><%= fa_icon "github" %></a></li>
-      <li><a href="#"><%= fa_icon "facebook" %></a></li>
-      <li><a href="#"><%= fa_icon "twitter" %></a></li>
-      <li><a href="#"><%= fa_icon "instagram" %></a></li>
+      <li><%= link_to (fa_icon "github", class: "mr-2"), "https://github.com/michaelharris7", target: "_blank", alt: "My Github account" %></li>
+      <li><%= link_to (fa_icon "linkedin-square", class: "mr-2"), "https://github.com/michaelharris7", target: "_blank", alt: "My Linkedin account" %></li>
+      <li><%= link_to (fa_icon "facebook"), "https://github.com/michaelharris7", target: "_blank", alt: "My Facebook account" %></li>
     </ol>
   </div>
 </aside>
