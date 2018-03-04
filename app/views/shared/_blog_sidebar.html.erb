@@ -6,7 +6,7 @@
 
   <%= source_helper("alert alert-info line-spacer") %>
 
-  <div>
+  <div class="sidebar-module pt-5">
     <h4>Topics:</h4>
     <% @side_bar_topics.each do |topic| %>
       <p><%= link_to topic.title, topic_path(topic) %></p>
@@ -16,8 +16,8 @@
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">
-      <li><%= link_to (fa_icon "github", class: "mr-2"), "https://github.com/michaelharris7", target: "_blank", alt: "My Github account" %></li>
-      <li><%= link_to (fa_icon "linkedin-square", class: "mr-2"), "https://www.linkedin.com/in/michael-harris-58053a15a/", target: "_blank", alt: "My Linkedin account" %></li>
+      <li><%= link_to (fa_icon "github", class: "pr-2"), "https://github.com/michaelharris7", target: "_blank", alt: "My Github account" %></li>
+      <li><%= link_to (fa_icon "linkedin-square", class: "pr-2"), "https://www.linkedin.com/in/michael-harris-58053a15a/", target: "_blank", alt: "My Linkedin account" %></li>
       <li><%= link_to (fa_icon "facebook"), "https://www.facebook.com/MichaelHarris7", target: "_blank", alt: "My Facebook account" %></li>
     </ol>
   </div>
