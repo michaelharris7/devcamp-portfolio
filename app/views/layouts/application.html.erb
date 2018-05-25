@@ -15,14 +15,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+Free B-Roll provided by <a target="_blank" href="http://www.Videezy.com">Videezy.com</a>
+
+
   <body>
     <div class="flex-container">
       <%= video_tag(
-          'HardDrivePhotojpeg.ogv',
+          'Particle_Wave_Motion_Background_Loop.ogv',
           id: 'background',
           muted: true,
           loop: true,
-          poster: 'home_bg.png'
+          poster: 'home_bg.jpg'
         )
       %>
 
@@ -36,8 +39,16 @@
         <%= yield %>
       </main>
 
-      <footer class="flex-footer">
-        <%= render "shared/application_footer" %>
+      <footer>
+        <div style="float:right">
+          <p class="back-video-caption">
+            Free B-Roll provided by <a target="_blank" href="http://www.Videezy.com">Videezy.com</a>
+          </p>
+        </div>
+        <br/>
+        <div class="flex-footer">
+          <%= render "shared/application_footer" %>
+        </div>
       </footer>
     </div>
     <script>

@@ -207,7 +207,7 @@ h6, .h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('home_bg.jpg') no-repeat;
   background-size: cover;
   opacity: 0.8;
 }
@@ -359,4 +359,20 @@ h6, .h6 {
 .card h6,
 .card a {
   text-shadow: none;
+}
+
+.back-video-caption {
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+  color: rgba(0,0,96,.3);
+  text-shadow: none;
+}
+
+.back-video-caption a {
+  color: rgba(0,0,96,.3);
+}
+
+.google-map {
+  border: 1px solid grey;
 }
