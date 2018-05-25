@@ -1,11 +1,11 @@
 class PagesController < ApplicationController
   def home
     @posts = Blog.all
-    @skills = Skill.all
+    @skills = Skill.all.order(created_at: :asc)
   end
 
   def about
-    @skills = Skill.all
+    @skills = Skill.all.order(created_at: :asc)
   end
 
   def contact
