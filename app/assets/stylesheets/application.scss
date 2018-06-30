@@ -376,3 +376,12 @@ h6, .h6 {
 .google-map {
   border: 1px solid grey;
 }
+
+.typed-text {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.typed-body {
+  background-color: rgba(0, 16, 64, .25);
+  border-radius: 10px;
+  padding: 20px;
+}
