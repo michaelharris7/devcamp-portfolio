@@ -91,5 +91,6 @@ Rails.application.configure do
 
   # config.action_cable.allowed_request_origins = ['https://mh-devcamp-portfolio.herokuapp.com', 'http://mh-devcamp-portfolio.herokuapp.com', 'http://www.michaelharrisportfolio.com', 'https://www.michaelharrisportfolio.com/']
   config.action_cable.allowed_request_origins = ['http://www.michaelharrisportfolio.com', 'https://www.michaelharrisportfolio.com/']
-  config.action_cable.url = "wss://#{ENV['RAILS_HOST']}/cable"
+  # config.action_cable.url = "wss://#{ENV['RAILS_HOST']}/cable"
+  config.action_cable.url = "wss://www.michaelharrisportfolio.com/cable"
 end
