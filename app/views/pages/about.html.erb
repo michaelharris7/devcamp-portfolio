@@ -43,7 +43,7 @@
             aria-expanded="false"
             aria-controls="jobHistory"
           >
-            Job History
+            Employment
           </button>
 
           <button
@@ -66,7 +66,7 @@
 
         <p>
           <div class="collapse" id="jobHistory">
-            <h2>Job History</h2>
+            <h2 class="pt-3">Employment</h2>
 
             <div class="card card-block">
               <div class="row">
@@ -113,7 +113,7 @@
             <div class="card card-block">
               <div class="row">
                 <div class="col-md-3 py-5">
-                  <%= image_tag "employment/partner_fusion.png", width: 125, alt: "Partner Fusion, Inc" %>
+                  <%= image_tag "employment/partner_fusion.png", width: 125, alt: "Partner Fusion, Inc." %>
                 </div>
                 <div class="col-md-9 about">
                   <h5>Partner Fusion, Inc.</h5>
@@ -134,7 +134,7 @@
             <div class="card card-block">
               <div class="row">
                 <div class="col-md-3 py-4">
-                  <%= image_tag "employment/bh-logo.png", width: 125, alt: "Bluehost, Inc" %>
+                  <%= image_tag "employment/bh-logo.png", width: 125, alt: "Bluehost, Inc." %>
                 </div>
                 <div class="col-md-9 about">
                   <h5>Bluehost, Inc.</h5>
@@ -176,16 +176,42 @@
           </div>
 
           <div class="collapse mt-3" id="education">
-            <h2>Education</h2>
+            <h2 class="pt-3">Education</h2>
+
+            <div class="card card-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag "education/sololearn.png", width: 125, alt: "SoloLearn, Inc." %>
+                </div>
+                <div class="col-md-9 about">
+                  <h5>SoloLearn</h5>
+                  <ul>
+                    <li>
+                      Completed extensive software engineering courses in numerous languages
+                    </li>
+                    <li>
+                      Passed certification exams efficiently in Python, Ruby, C, JavaScript, HTML, and CSS
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             <div class="card card-block">
               <div class="row">
                 <div class="col-md-3">
                   <%= image_tag "education/bottega.jpg", width: 125, alt: "Bottega School of Technology" %>
                 </div>
-                <div class="col-md-9">
-                  <h5>Bottega School of Technology</h5>
-                  <p>Received a Web Developer Certificate for graduating where I learned the skills needed for full-stack website development through the languages/frameworks of Ruby, Ruby on Rails, Angular, JavaScript, HTML, and CSS.</p>
+                <div class="col-md-9 about">
+                  <h5>Bottega Tech (DevCamp)</h5>
+                  <ul>
+                    <li>
+                      Extensive real-life application courses focused on Ruby on Rails, Angular, and HTML
+                    </li>
+                    <li>
+                      Refined my skills in Ruby, Ruby on Rails, Python, Angular, JavaScript, HTML, and CSS
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -195,9 +221,16 @@
                 <div class="col-md-3 py-3">
                   <%= link_to image_tag("education/w3cert.gif", width: 125, alt: "W3 Schools Certified"), "http://www.refsnesdata.no/certification/w3certified.asp?id=8124587", target: :_blank %>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 about">
                   <h5>W3 Schools</h5>
-                  <p>Received front-end Web Developer Certificates for courses completed in HTML, CSS, and JavaScript</p>
+                    <ul>
+                      <li>
+                        Extensive front-end web development courses in HTML, CSS, and JavaScript
+                      </li>
+                      <li>
+                        Passed certification exams with a mark of excellence in JavaScript and HTML
+                      </li>
+                    </ul>
                 </div>
               </div>
             </div>
