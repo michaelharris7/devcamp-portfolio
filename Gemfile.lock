@@ -217,7 +217,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redcarpet (3.4.0)
+    redcarpet (3.5.1)
     redis (3.3.5)
     redis-namespace (1.6.0)
       redis (>= 3.0.4)
@@ -336,7 +336,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 3.7)
   rails (~> 5.1.4)
-  redcarpet (~> 3.4)
+  redcarpet (~> 3.5)
   redis (~> 3.3, >= 3.3.3)
   resque-heroku-signals
   sass-rails (~> 5.0)
